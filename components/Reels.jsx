@@ -50,7 +50,7 @@ const REELS_DATA = [
     {
         id: 6,
         username: 'auto_enthusiast',
-        videoUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackAds.mp4',
+        videoUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4',
         likes: '150K',
         comments: '1.8K',
         description: 'Checkout this beast! 🏎️💨 #cars #speed',
@@ -95,7 +95,7 @@ const REELS_DATA = [
     {
         id: 11,
         username: 'ocean_breeze',
-        videoUrl: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4',
+        videoUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4',
         likes: '120K',
         comments: '1.1K',
         description: 'Hit the road! 🏎️💨 #roadtrip #adventure',
@@ -104,7 +104,7 @@ const REELS_DATA = [
     {
         id: 12,
         username: 'wildlife_geo',
-        videoUrl: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4',
+        videoUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4',
         likes: '95K',
         comments: '800',
         description: 'Finding the best deals! 🚗💰 #cars #finance',
@@ -112,69 +112,6 @@ const REELS_DATA = [
     },
     {
         id: 13,
-        username: 'skater_pro',
-        videoUrl: 'https://www.w3schools.com/html/mov_bbb.mp4',
-        likes: '2M',
-        comments: '15K',
-        description: 'Insane trick! 🛹🔥 #skate #pro',
-        audio: 'Punk Rock - Skate'
-    },
-    {
-        id: 14,
-        username: 'zen_garden',
-        videoUrl: 'https://www.w3schools.com/html/movie.mp4',
-        likes: '45K',
-        comments: '300',
-        description: 'Relaxing moments 🌿🧘 #meditation #peace',
-        audio: 'Calm Piano - Relax'
-    },
-    {
-        id: 15,
-        username: 'space_vibe',
-        videoUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4',
-        likes: '340K',
-        comments: '2.4K',
-        description: 'Into the cosmos... 🌌🚀 #space #universe',
-        audio: 'Space Odyssey - Ambient'
-    },
-    {
-        id: 16,
-        username: 'aqua_life',
-        videoUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
-        likes: '12K',
-        comments: '150',
-        description: 'Deep sea secrets 🌊🐠 #ocean #diver',
-        audio: 'Aqua World - Deep'
-    },
-    {
-        id: 17,
-        username: 'urban_beats',
-        videoUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
-        likes: '890K',
-        comments: '11K',
-        description: 'City that never sleeps 🏙️✨ #nightlife #vibes',
-        audio: 'Lo-Fi Night - City'
-    },
-    {
-        id: 18,
-        username: 'pixel_ninja',
-        videoUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4',
-        likes: '567K',
-        comments: '5K',
-        description: 'Level up! 🎮🔥 #gaming #pro',
-        audio: '8-Bit Hero - Gaming'
-    },
-    {
-        id: 19,
-        username: 'retro_vibe',
-        videoUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/Routes.mp4',
-        likes: '45K',
-        comments: '890',
-        description: 'Classic road trip memories 🗺️🚗 #vintage #travel',
-        audio: 'Retro Beats - 90s'
-    },
-    {
-        id: 20,
         username: 'auto_guru',
         videoUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4',
         likes: '120K',
@@ -183,25 +120,25 @@ const REELS_DATA = [
         audio: 'Auto Talk - Motor'
     },
     {
-        id: 21,
-        username: 'vlog_queen',
-        videoUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
-        likes: '900K',
-        comments: '8K',
-        description: 'Just having some fun today! ✨🌈 #vlog #happy',
-        audio: 'Pop Hits - Summer'
+        id: 14,
+        username: 'skater_pro',
+        videoUrl: 'https://www.w3schools.com/html/mov_bbb.mp4',
+        likes: '2M',
+        comments: '15K',
+        description: 'Insane trick! 🛹🔥 #skate #pro',
+        audio: 'Punk Rock - Skate'
     },
     {
-        id: 22,
-        username: 'sci_fi_geek',
-        videoUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4',
-        likes: '1.5M',
-        comments: '20K',
-        description: 'The future is here 🦾🤖 #scifi #tech',
-        audio: 'Future Synth - Scifi'
+        id: 15,
+        username: 'zen_garden',
+        videoUrl: 'https://www.w3schools.com/html/movie.mp4',
+        likes: '45K',
+        comments: '300',
+        description: 'Relaxing moments 🌿 #meditation #peace',
+        audio: 'Calm Piano - Relax'
     },
     {
-        id: 23,
+        id: 16,
         username: 'nature_vibe',
         videoUrl: 'https://raw.githubusercontent.com/intel-iot-devkit/sample-videos/master/person-bicycle-car-detection.mp4',
         likes: '34K',
@@ -210,7 +147,7 @@ const REELS_DATA = [
         audio: 'Electronic Pulse - Tech'
     },
     {
-        id: 24,
+        id: 17,
         username: 'health_vlog',
         videoUrl: 'https://raw.githubusercontent.com/intel-iot-devkit/sample-videos/master/bottle-detection.mp4',
         likes: '12K',
@@ -219,7 +156,7 @@ const REELS_DATA = [
         audio: 'Zen Flow - Health'
     },
     {
-        id: 25,
+        id: 18,
         username: 'city_walk',
         videoUrl: 'https://raw.githubusercontent.com/intel-iot-devkit/sample-videos/master/face-demographics-walking-and-pause.mp4',
         likes: '89K',
@@ -228,56 +165,439 @@ const REELS_DATA = [
         audio: 'Street Jazz - Mood'
     },
     {
+        id: 21,
+        username: 'ocean_breeze',
+        videoUrl: 'https://vjs.zencdn.net/v/oceans.mp4',
+        likes: '780K',
+        comments: '5.6K',
+        description: 'The beauty of the deep blue 🌊🐬 #ocean #nature',
+        audio: 'Sea Shore - Relax'
+    },
+    {
+        id: 22,
+        username: 'garden_zen',
+        videoUrl: 'https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4',
+        likes: '12K',
+        comments: '150',
+        description: 'Blooming with positivity! 🌸✨ #flowers #spring',
+        audio: 'Nature - Soft'
+    },
+    {
+        id: 23,
+        username: 'jelly_fishy',
+        videoUrl: 'https://test-videos.co.uk/vids/jellyfish/mp4/h264/1080/Jellyfish_1080_10s_1MB.mp4',
+        likes: '95K',
+        comments: '800',
+        description: 'Glow in the dark vibes 🐙✨ #jellyfish #aesthetic',
+        audio: 'Deep Sea - Synth'
+    },
+    {
+        id: 24,
+        username: 'fast_vibe',
+        videoUrl: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_video-fast.mp4',
+        likes: '34K',
+        comments: '400',
+        description: 'Fast and curious! 🏎️💨 #speed #vibe',
+        audio: 'Upbeat - Drive'
+    },
+    {
+        id: 25,
+        username: 'slow_mo',
+        videoUrl: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_video-slow.mp4',
+        likes: '56K',
+        comments: '600',
+        description: 'Take it slow and enjoy the ride 🐌🌈 #chill #slowmo',
+        audio: 'Relaxed - LoFi'
+    },
+    {
         id: 26,
-        username: 'anime_fan',
-        videoUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
-        likes: '2.1M',
-        comments: '30K',
-        description: 'Classic bunny moments! 🐰🥕 #anime #classic',
-        audio: 'Funny Tunes - Cartoon'
+        username: 'cute_patrol',
+        videoUrl: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_video-cute.mp4',
+        likes: '2.5M',
+        comments: '45K',
+        description: 'Warning: Too much cuteness! 🐱❤️ #pets #cute',
+        audio: 'Happy - Paws'
     },
     {
         id: 27,
-        username: 'art_space',
-        videoUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
-        likes: '560K',
-        comments: '4K',
-        description: 'Artistic expression in motion 🎨🌊 #motion #art',
-        audio: 'Ambient Waves - Dream'
+        username: 'highline_pro',
+        videoUrl: 'http://clappr.io/highline.mp4',
+        likes: '89K',
+        comments: '1.1K',
+        description: 'View from the top! 🏙️☁️ #urban #view',
+        audio: 'Street - Jazz'
     },
     {
         id: 28,
-        username: 'movie_buff',
-        videoUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4',
-        likes: '1.1M',
-        comments: '15K',
-        description: 'Fantasy worlds come alive ⚔️🐉 #fantasy #cgi',
-        audio: 'Epic Choir - Movie'
+        username: 'driver_cam',
+        videoUrl: 'https://raw.githubusercontent.com/intel-iot-devkit/sample-videos/master/driver-action-recognition-0001.mp4',
+        likes: '12K',
+        comments: '200',
+        description: 'Eyes on the road! 🚗🛣️ #safety #driver',
+        audio: 'Engine - Normal'
     },
     {
         id: 29,
-        username: 'tech_news',
-        videoUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
-        likes: '230K',
-        comments: '3.1K',
-        description: 'Testing the latest gadgets! 📱🚀 #unboxing #tech',
-        audio: 'High Energy - Tech'
+        username: 'car_spotter',
+        videoUrl: 'https://raw.githubusercontent.com/intel-iot-devkit/sample-videos/master/car-detection.mp4',
+        likes: '67K',
+        comments: '900',
+        description: 'Traffic flow in the city 🏙️🚗 #cars #urban',
+        audio: 'City - Traffic'
     },
     {
-        id: 30,
-        username: 'daily_joy',
-        videoUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4',
+        id: 46,
+        username: 'nature_explorer',
+        videoUrl: 'https://file-examples.com/storage/fe349942a46786018449c25/2017/04/file_example_MP4_1920_18MG.mp4',
+        likes: '12K',
+        comments: '150',
+        description: 'Peaceful walks in nature 🌿🚶 #nature #peace',
+        audio: 'Forest Sounds - Chill'
+    },
+    {
+        id: 47,
+        username: 'wild_nature',
+        videoUrl: 'https://samplelib.com/lib/preview/mp4/sample-5s.mp4',
+        likes: '45K',
+        comments: '500',
+        description: 'Nature at its best 🌳✨ #wildlife #nature',
+        audio: 'Nature - Relaxing'
+    },
+    {
+        id: 48,
+        username: 'ocean_waves',
+        videoUrl: 'https://samplelib.com/lib/preview/mp4/sample-10s.mp4',
+        likes: '89K',
+        comments: '1.2K',
+        description: 'Crashing waves on the shore 🌊🏖️ #ocean #beach',
+        audio: 'Ocean - Waves'
+    },
+    {
+        id: 49,
+        username: 'city_life',
+        videoUrl: 'https://samplelib.com/lib/preview/mp4/sample-15s.mp4',
+        likes: '560K',
+        comments: '4.5K',
+        description: 'Urban vibes in the night 🏙️✨ #city #night',
+        audio: 'City - Lights'
+    },
+    {
+        id: 50,
+        username: 'gadget_news',
+        videoUrl: 'https://samplelib.com/lib/preview/mp4/sample-20s.mp4',
+        likes: '23K',
+        comments: '300',
+        description: 'New gadgets for the year! 📱✨ #tech #gadgets',
+        audio: 'Tech - News'
+    },
+    {
+        id: 51,
+        username: 'car_lover',
+        videoUrl: 'https://samplelib.com/lib/preview/mp4/sample-30s.mp4',
+        likes: '150K',
+        comments: '2.1K',
+        description: 'Checkout this luxury car! 🏎️💨 #cars #luxury',
+        audio: 'Car - Engine'
+    },
+    {
+        id: 52,
+        username: 'space_odyssey',
+        videoUrl: 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4',
+        likes: '2.5M',
+        comments: '50K',
+        description: 'Classic bunny vibes 🐰✨ #classic #animation',
+        audio: 'Bunny - Theme'
+    },
+    {
+        id: 53,
+        username: 'drone_view',
+        videoUrl: 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_2mb.mp4',
+        likes: '120K',
+        comments: '1.5K',
+        description: 'Higher quality bunny! 🐰🔥 #drone #view',
+        audio: 'Wind - Effects'
+    },
+    {
+        id: 54,
+        username: 'urban_pulse',
+        videoUrl: 'http://mirrors.standaloneinstaller.com/video-sample/logistics-free-video.mp4',
+        likes: '45K',
+        comments: '600',
+        description: 'Logistics in action 🚛📦 #urban #business',
+        audio: 'Urban - Pulse'
+    },
+    {
+        id: 55,
+        username: 'tech_demo',
+        videoUrl: 'http://mirrors.standaloneinstaller.com/video-sample/DLP_PART_2_720p_30fps.mp4',
+        likes: '89K',
+        comments: '1.1K',
+        description: 'Testing the latest display tech 💻✨ #tech #display',
+        audio: 'Tech - Demo'
+    },
+    {
+        id: 56,
+        username: 'sky_high',
+        videoUrl: 'https://filesamples.com/samples/video/mp4/sample_640x360.mp4',
+        likes: '23K',
+        comments: '400',
+        description: 'Clouds in the sky ☁️✨ #sky #nature',
+        audio: 'Ambient - Calm'
+    },
+    {
+        id: 57,
+        username: 'daily_dose',
+        videoUrl: 'https://filesamples.com/samples/video/mp4/sample_960x540.mp4',
+        likes: '56K',
+        comments: '700',
+        description: 'Morning routines are the best! ☀️☕ #daily #vlog',
+        audio: 'Coffee - Chill'
+    },
+    {
+        id: 19,
+        username: 'nature_vibe',
+        videoUrl: 'https://media.w3.org/2010/05/sintel/trailer.mp4',
         likes: '450K',
-        comments: '5.2K',
-        description: 'Spreading joy one reel at a time! 🌈✨ #positivity #life',
-        audio: 'Happy Vibes - Daily'
+        comments: '2.3K',
+        description: 'Testing the waters... Literally! 🌊🐉 #sintel #cgi',
+        audio: 'Aqua - Ambient'
+    },
+    {
+        id: 20,
+        username: 'bunny_fan',
+        videoUrl: 'https://media.w3.org/2010/05/bunny/trailer.mp4',
+        likes: '1.1M',
+        comments: '10K',
+        description: 'Big Buck Bunny is always a mood 🐰🥕 #classic #animation',
+        audio: 'Happy - Cartoon'
+    },
+    {
+        id: 64,
+        username: 'aqua_deep',
+        videoUrl: 'https://vjs.zencdn.net/v/oceans.mp4',
+        likes: '780K',
+        comments: '5.6K',
+        description: 'The beauty of the deep blue 🌊🐬 #ocean #nature',
+        audio: 'Sea Shore - Relax'
+    },
+    {
+        id: 65,
+        username: 'garden_life',
+        videoUrl: 'https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4',
+        likes: '12K',
+        comments: '150',
+        description: 'Blooming with positivity! 🌸✨ #flowers #spring',
+        audio: 'Nature - Soft'
+    },
+    {
+        id: 66,
+        username: 'jelly_glow',
+        videoUrl: 'https://test-videos.co.uk/vids/jellyfish/mp4/h264/1080/Jellyfish_1080_10s_1MB.mp4',
+        likes: '95K',
+        comments: '800',
+        description: 'Glow in the dark vibes 🐙✨ #jellyfish #aesthetic',
+        audio: 'Deep Sea - Synth'
+    },
+    {
+        id: 67,
+        username: 'mountain_sky',
+        videoUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
+        likes: '125K',
+        comments: '1.2K',
+        description: 'Mountain adventures! ⛰️✨ #adventure #nature',
+        audio: 'Mountain - Air'
+    },
+    {
+        id: 68,
+        username: 'city_night',
+        videoUrl: 'http://clappr.io/highline.mp4',
+        likes: '150K',
+        comments: '2.5K',
+        description: 'City neon nights 🏙️✨ #neon #city',
+        audio: 'Synthwave - Pulse'
+    },
+    {
+        id: 69,
+        username: 'skate_pro_v2',
+        videoUrl: 'https://www.w3schools.com/html/mov_bbb.mp4',
+        likes: '2M',
+        comments: '45K',
+        description: 'Keep on rolling! 🛹🔥 #skate #vibe',
+        audio: 'Punk - Rock'
+    },
+    {
+        id: 70,
+        username: 'vibe_check',
+        videoUrl: 'https://raw.githubusercontent.com/intel-iot-devkit/sample-videos/master/person-bicycle-car-detection.mp4',
+        likes: '34K',
+        comments: '450',
+        description: 'Traffic and tech 🌿🚴 #ai #detection',
+        audio: 'Electronic - Pulse'
+    },
+    {
+        id: 71,
+        username: 'health_tips',
+        videoUrl: 'https://raw.githubusercontent.com/intel-iot-devkit/sample-videos/master/bottle-detection.mp4',
+        likes: '12K',
+        comments: '200',
+        description: 'Stay hydrated! 💧✨ #health #tips',
+        audio: 'Zen - Flow'
+    },
+    {
+        id: 72,
+        username: 'walk_the_city',
+        videoUrl: 'https://raw.githubusercontent.com/intel-iot-devkit/sample-videos/master/face-demographics-walking-and-pause.mp4',
+        likes: '89K',
+        comments: '1.1K',
+        description: 'Walking through the city 🏙️🚶 #urban #walk',
+        audio: 'Street - Jazz'
+    },
+    {
+        id: 73,
+        username: 'sea_breeze',
+        videoUrl: 'https://vjs.zencdn.net/v/oceans.mp4',
+        likes: '780K',
+        comments: '5.6K',
+        description: 'Deep blue beauty 🌊🐬 #ocean #nature',
+        audio: 'Sea - Shore'
+    },
+    {
+        id: 74,
+        username: 'flower_power',
+        videoUrl: 'https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4',
+        likes: '12K',
+        comments: '150',
+        description: 'Flowers in the spring 🌸✨ #nature #spring',
+        audio: 'Nature - Soft'
+    },
+    {
+        id: 75,
+        username: 'jelly_dance',
+        videoUrl: 'https://test-videos.co.uk/vids/jellyfish/mp4/h264/1080/Jellyfish_1080_10s_1MB.mp4',
+        likes: '95K',
+        comments: '800',
+        description: 'Under the sea magic 🐙✨ #jellyfish #aesthetic',
+        audio: 'Deep - Synth'
+    },
+    {
+        id: 52,
+        username: 'space_odyssey',
+        videoUrl: 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4',
+        likes: '2.5M',
+        comments: '50K',
+        description: 'Classic bunny vibes 🐰✨ #classic #animation',
+        audio: 'Bunny - Theme'
+    },
+    {
+        id: 53,
+        username: 'drone_view',
+        videoUrl: 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_2mb.mp4',
+        likes: '120K',
+        comments: '1.5K',
+        description: 'Higher quality bunny! 🐰🔥 #drone #view',
+        audio: 'Wind - Effects'
+    },
+    {
+        id: 54,
+        username: 'urban_pulse',
+        videoUrl: 'http://mirrors.standaloneinstaller.com/video-sample/logistics-free-video.mp4',
+        likes: '45K',
+        comments: '600',
+        description: 'Logistics in action 🚛📦 #urban #business',
+        audio: 'Urban - Pulse'
+    },
+    {
+        id: 55,
+        username: 'tech_demo',
+        videoUrl: 'http://mirrors.standaloneinstaller.com/video-sample/DLP_PART_2_720p_30fps.mp4',
+        likes: '89K',
+        comments: '1.1K',
+        description: 'Testing the latest display tech 💻✨ #tech #display',
+        audio: 'Tech - Demo'
+    },
+    {
+        id: 56,
+        username: 'sky_high',
+        videoUrl: 'https://filesamples.com/samples/video/mp4/sample_640x360.mp4',
+        likes: '23K',
+        comments: '400',
+        description: 'Clouds in the sky ☁️✨ #sky #nature',
+        audio: 'Ambient - Calm'
+    },
+    {
+        id: 57,
+        username: 'daily_dose',
+        videoUrl: 'https://filesamples.com/samples/video/mp4/sample_960x540.mp4',
+        likes: '56K',
+        comments: '700',
+        description: 'Morning routines are the best! ☀️☕ #daily #vlog',
+        audio: 'Coffee - Chill'
+    },
+    {
+        id: 58,
+        username: 'ocean_breeze',
+        videoUrl: 'https://www.w3schools.com/html/movie.mp4',
+        likes: '34K',
+        comments: '450',
+        description: 'A quiet moment by the ocean 🌊🧘 #peace #ocean',
+        audio: 'Sea - Waves'
+    },
+    {
+        id: 59,
+        username: 'macro_world',
+        videoUrl: 'https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4',
+        likes: '12K',
+        comments: '200',
+        description: 'Nature in close-up 🌸✨ #macro #nature',
+        audio: 'Soft - Garden'
+    },
+    {
+        id: 60,
+        username: 'city_lights',
+        videoUrl: 'http://clappr.io/highline.mp4',
+        likes: '150K',
+        comments: '2.5K',
+        description: 'City neon nights 🏙️✨ #neon #city',
+        audio: 'Synthwave - Pulse'
+    },
+    {
+        id: 61,
+        username: 'skate_vibes',
+        videoUrl: 'https://www.w3schools.com/html/mov_bbb.mp4',
+        likes: '2M',
+        comments: '45K',
+        description: 'Keep on rolling! 🛹🔥 #skate #vibe',
+        audio: 'Punk - Rock'
+    },
+    {
+        id: 62,
+        username: 'forest_soul',
+        videoUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
+        likes: '89K',
+        comments: '1.1K',
+        description: 'Deep in the heart of the forest 🌲✨ #nature #peace',
+        audio: 'Forest - Zen'
+    },
+    {
+        id: 63,
+        username: 'speed_tracker',
+        videoUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackAds.mp4',
+        likes: '120K',
+        comments: '2.1K',
+        description: 'Tracking the beast! 🏎️💨 #cars #review',
+        audio: 'Engine - Turbo'
     }
 ];
 
 const POOL_OF_USERNAMES = [
     'pixel_art', 'daily_vlog', 'music_soul', 'gamer_zone', 'creative_mind', 'wanderlust', 'foodie_life', 'tech_insider',
     'style_icon', 'adventure_seeker', 'chef_talk', 'movie_magic', 'retro_gamer', 'health_first', 'urban_pulse', 'sky_high',
-    'neon_nights', 'wild_spirit', 'digital_nomad', 'trend_setter', 'soul_surfer', 'zen_master', 'code_ninja', 'data_viz'
+    'neon_nights', 'wild_spirit', 'digital_nomad', 'trend_setter', 'soul_surfer', 'zen_master', 'code_ninja', 'data_viz',
+    'art_flow', 'urban_vibe', 'mountain_high', 'desert_rose', 'city_slicker', 'rural_life', 'dance_diva', 'beat_boxer',
+    'green_thumb', 'cosmic_journey', 'mountain_top', 'desert_wind', 'ocean_wave', 'city_light', 'rural_soul', 'yoga_glow',
+    'fit_life', 'skate_boarder', 'bike_rider', 'photo_graphy', 'video_graphy', 'design_thinker', 'ux_ui_pro', 'dev_genius',
+    'quantum_coder', 'meta_explorer', 'cyber_artist', 'eco_warrior', 'solar_punk', 'future_focus', 'mindful_living', 'global_nomad',
+    'pixel_pusher', 'sound_shaper', 'motion_maker', 'story_teller', 'vision_quest', 'peak_performance', 'daily_grit', 'serene_scenes'
 ];
 const POOL_OF_DESCRIPTIONS = [
     'Check this out! 🚀✨ #amazing #viral',
@@ -295,7 +615,26 @@ const POOL_OF_DESCRIPTIONS = [
     'Level up your game 🎮🔥 #pro #gaming',
     'The view from the top 🏔️☁️ #mountains #hiking',
     'Friday night vibes 🕺🎶 #weekend #party',
-    'Productivity hack you need 💻🚀 #work #efficiency'
+    'Productivity hack you need 💻🚀 #work #efficiency',
+    'Nature is healing 🌿💚 #earth #peace',
+    'Unboxing the future 📦✨ #tech #new',
+    'Street food discovery! 🍜🔥 #food #travel',
+    'Morning coffee thoughts ☕️💭 #morning #vibe',
+    'Sunsets in the city 🌆✨ #city #view',
+    'Gym motivation! 💪😤 #fitness #beast',
+    'Drawing my dreams 🎨✨ #art #creativity',
+    'Petting my best friend 🐶❤️ #dog #love',
+    'Virtual reality is insane! 🕶️🌀 #vr #tech',
+    'Coding all night long 💻🌑 #dev #life',
+    'Planting some love 🪴💚 #garden #home',
+    'Baking therapy 🧁✨ #sweet #baking',
+    'Driving into the sunset 🚗🌅 #drive #vibes',
+    'Skydiving experience! 🪂💨 #adrenaline #life',
+    'Exploring the unknown 🌌✨ #explorer',
+    'Mastering the craft 🛠️💪 #skill',
+    'A moment of silence 🧘‍♂️✨ #mindfulness',
+    'Chasing the light ☀️📸 #photography',
+    'Breaking limits every day 🚀💯 #growth'
 ];
 
 const ReelItem = ({ reel, isFollowed, onToggleFollow, isLikedInitially, onToggleLike, isDislikedInitially, onToggleDislike, isMuted, onToggleMute }) => {
@@ -750,24 +1089,39 @@ const Reels = () => {
         const seenSet = savedSeen ? new Set(JSON.parse(savedSeen)) : new Set();
         setSeenVideoUrls(seenSet);
 
-        // Populate initial reels starting from the first UNSEEN one
-        let initialPool = REELS_DATA.filter(r => !seenSet.has(r.videoUrl));
-        if (initialPool.length === 0) {
-            initialPool = REELS_DATA;
-            seenSet.clear();
-            setSeenVideoUrls(new Set());
-        }
+        // Find videos we haven't seen yet
+        let availableVideos = REELS_DATA.filter(r => !seenSet.has(r.videoUrl));
+
+        // If we've seen everything, we switch to "Synthetic Mode" immediately
+        const isSyntheticStart = availableVideos.length === 0;
+        const sourcePool = isSyntheticStart ? REELS_DATA : availableVideos;
 
         // Load first 5 reels to start with
-        const initialBatch = initialPool.slice(0, 5).map(r => ({
-            ...r,
-            id: Date.now() + Math.random()
-        }));
+        const initialBatch = [...sourcePool].sort(() => Math.random() - 0.5).slice(0, 5).map(r => {
+            const randomUsername = POOL_OF_USERNAMES[Math.floor(Math.random() * POOL_OF_USERNAMES.length)];
+            const randomDescription = POOL_OF_DESCRIPTIONS[Math.floor(Math.random() * POOL_OF_DESCRIPTIONS.length)];
+
+            return {
+                ...r,
+                id: `reel-${Date.now()}-${Math.random()}`,
+                // If in synthetic mode (all unique videos seen), randomize even the first batch
+                ...(isSyntheticStart ? {
+                    username: randomUsername,
+                    description: randomDescription,
+                    likes: (Math.floor(Math.random() * 500) + 10) + 'K',
+                    comments: Math.floor(Math.random() * 2000) + 50,
+                    audio: `Original Audio - ${randomUsername}`
+                } : {})
+            };
+        });
+
         setReels(initialBatch);
 
-        // Add those to seen
-        initialBatch.forEach(r => seenSet.add(r.videoUrl));
-        setSeenVideoUrls(new Set(seenSet));
+        // Add those to seen if not in synthetic mode
+        if (!isSyntheticStart) {
+            initialBatch.forEach(r => seenSet.add(r.videoUrl));
+            setSeenVideoUrls(new Set(seenSet));
+        }
     }, []);
 
     // Sync Follows
@@ -849,29 +1203,42 @@ const Reels = () => {
 
         // Simulate API call delay
         setTimeout(() => {
-            // Filter out videos that have been seen
+            // Get videos not yet seen in context of unique initial pool
             let availableVideos = REELS_DATA.filter(r => !seenVideoUrls.has(r.videoUrl));
 
-            // If all videos have been seen, reset to show variety again
+            // If we've seen all unique videos, we transition to "Unlimited Synthetic" mode
+            // where we reuse videos but combine them with fresh random metadata
+            let isSyntheticMode = false;
             if (availableVideos.length === 0) {
                 availableVideos = REELS_DATA;
-                setSeenVideoUrls(new Set());
+                isSyntheticMode = true;
             }
 
-            const nextBatch = availableVideos.slice(0, 3).map((randomReelTemplate) => {
-                // Track this video as seen
-                setSeenVideoUrls(prev => new Set(prev).add(randomReelTemplate.videoUrl));
+            // Shuffle available videos
+            availableVideos = [...availableVideos].sort(() => Math.random() - 0.5);
+
+            const nextBatch = availableVideos.slice(0, 5).map((randomReelTemplate) => {
+                // If not in synthetic mode, track as seen
+                if (!isSyntheticMode) {
+                    setSeenVideoUrls(prev => {
+                        const next = new Set(prev);
+                        next.add(randomReelTemplate.videoUrl);
+                        return next;
+                    });
+                }
 
                 const randomUsername = POOL_OF_USERNAMES[Math.floor(Math.random() * POOL_OF_USERNAMES.length)];
                 const randomDescription = POOL_OF_DESCRIPTIONS[Math.floor(Math.random() * POOL_OF_DESCRIPTIONS.length)];
 
+                // Generate a unique ID to prevent React key issues even if video URL is reused
                 return {
                     ...randomReelTemplate,
-                    id: Date.now() + Math.random(),
+                    id: `reel-${Date.now()}-${Math.random()}`,
                     username: randomUsername,
                     description: randomDescription,
-                    likes: Math.floor(Math.random() * 500) + 'K',
-                    comments: Math.floor(Math.random() * 2000)
+                    likes: (Math.floor(Math.random() * 500) + 10) + 'K',
+                    comments: Math.floor(Math.random() * 2000) + 50,
+                    audio: `Original Audio - ${randomUsername}`
                 };
             });
 
@@ -882,8 +1249,9 @@ const Reels = () => {
 
     const handleScroll = (e) => {
         const { scrollTop, scrollHeight, clientHeight } = e.target;
-        // Trigger when user is within 50px of the bottom
-        if (scrollHeight - scrollTop <= clientHeight + 50) {
+        // Trigger proactively when user is within 1.5 screen lengths of the bottom
+        // This ensures "fetching" happens before they even see it
+        if (scrollHeight - scrollTop <= clientHeight * 2.5) {
             loadMoreReels();
         }
     };
