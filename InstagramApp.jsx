@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
 import { Home, Search, PlusSquare, Play, User, MessageCircle, Heart } from 'lucide-react';
 import StoryBar from './components/StoryBar';
+import StoryViewer from './components/StoryViewer';
 import PostFeed from './components/PostFeed';
-import Reels from './components/Reels';
+import Reels from './components/ReelsView';
+import MessagesView from './components/MessagesView';
+import ProfileView from './components/ProfileView';
 import SearchPage from './components/Search';
+import { STORIES } from './data/stories';
 
 const InstagramApp = () => {
     const [activeTab, setActiveTab] = useState('home');
+    const [viewingStoryIndex, setViewingStoryIndex] = useState(null);
 
     return (
         <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
@@ -35,7 +40,12 @@ const InstagramApp = () => {
                 </h1>
                 <div style={{ display: 'flex', gap: '20px' }}>
                     <Heart size={24} className="interactive" style={{ cursor: 'pointer' }} />
-                    <MessageCircle size={24} className="interactive" style={{ cursor: 'pointer' }} />
+                    <MessageCircle
+                        size={24}
+                        className="interactive"
+                        style={{ cursor: 'pointer' }}
+                        onClick={() => setActiveTab('messages')}
+                    />
                 </div>
             </div>
 
@@ -43,15 +53,18 @@ const InstagramApp = () => {
             <div className="scroll-hide" style={{ flex: 1, overflowY: 'auto' }}>
                 {activeTab === 'home' && (
                     <>
-                        <StoryBar />
+                        <StoryBar onStoryClick={setViewingStoryIndex} />
                         <PostFeed />
                     </>
                 )}
+                {activeTab === 'search' && <SearchPage />}
+                {activeTab === 'messages' && <MessagesView onBack={() => setActiveTab('home')} />}
                 {activeTab === 'explore' && <SearchPage />}
                 {activeTab === 'reels' && <Reels />}
-                {activeTab !== 'home' && activeTab !== 'reels' && (
+                {activeTab === 'profile' && <ProfileView />}
+                {activeTab === 'create' && (
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%', color: 'var(--text-secondary)' }}>
-                        <p>{activeTab.charAt(0).toUpperCase() + activeTab.slice(1)} page coming soon!</p>
+                        <p>Create page coming soon!</p>
                     </div>
                 )}
             </div>
@@ -96,6 +109,14 @@ const InstagramApp = () => {
                     style={{ cursor: 'pointer', color: activeTab === 'profile' ? 'var(--text-primary)' : 'var(--text-secondary)' }}
                 />
             </div>
+
+            {viewingStoryIndex !== null && (
+                <StoryViewer
+                    stories={STORIES}
+                    initialStoryIndex={viewingStoryIndex}
+                    onClose={() => setViewingStoryIndex(null)}
+                />
+            )}
         </div>
     );
 };

@@ -1,15 +1,6 @@
-import React from 'react';
+import { STORIES } from '../data/stories';
 
-const STORIES = [
-    { id: 1, name: 'Your Story', avatar: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&h=100&fit=crop' },
-    { id: 2, name: 'alex_r', avatar: 'https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=100&h=100&fit=crop' },
-    { id: 3, name: 'sarah.j', avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop' },
-    { id: 4, name: 'mike_v', avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop' },
-    { id: 5, name: 'traveler', avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop' },
-    { id: 6, name: 'coding_ninja', avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop' },
-];
-
-const StoryBar = () => {
+const StoryBar = ({ onStoryClick }) => {
     return (
         <div className="scroll-hide" style={{
             display: 'flex',
@@ -18,14 +9,19 @@ const StoryBar = () => {
             overflowX: 'auto',
             borderBottom: '1px solid var(--border-color)'
         }}>
-            {STORIES.map(story => (
-                <div key={story.id} className="interactive" style={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    gap: '4px',
-                    cursor: 'pointer'
-                }}>
+            {STORIES.map((story, index) => (
+                <div
+                    key={story.id}
+                    className="interactive"
+                    onClick={() => onStoryClick && onStoryClick(index)}
+                    style={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'center',
+                        gap: '4px',
+                        cursor: 'pointer'
+                    }}
+                >
                     <div className="story-ring">
                         <div className="story-inner">
                             <img
